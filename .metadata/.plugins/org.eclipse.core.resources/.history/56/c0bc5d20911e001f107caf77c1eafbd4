@@ -1,0 +1,62 @@
+package org.testing.testScripts;
+
+import java.io.IOException;
+import java.util.Properties;
+import java.util.Scanner;
+
+import org.testing.resources.JsonHandle;
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.JsonParsing;
+import org.testing.utilities.JsonReplacement;
+import org.testing.utilities.PropertiesHandle;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class TC3_PostUsingUserInput {
+    
+    public static String returnIdValue;
+    
+    @Test
+    public void createUserByInputTest() throws Exception {
+        Properties p = PropertiesHandle.loadProperties("../RestAssuredBookStore/URI.properties");
+        String requestBody = JsonHandle.readJsonData("../RestAssuredBookStore/src/test/resources/requestBody.json");
+        HTTPMethods h = new HTTPMethods(p);
+
+        // Read user input
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the id value:");
+        String idValue = scanner.next();
+        System.out.println("Please enter the name value:");
+        String nameValue = scanner.next();
+        System.out.println("Please enter the job value:");
+        String jobValue = scanner.next();
+        scanner.close();
+
+        // Replace placeholders in JSON request body
+        requestBody = JsonReplacement.assighnJsonValues(requestBody, "id", idValue);
+        requestBody = JsonReplacement.assighnJsonValues(requestBody, "name", nameValue);
+        requestBody = JsonReplacement.assighnJsonValues(requestBody, "job", jobValue);
+
+        // Send POST request
+        Response resObj = h.createUsersbyPost(requestBody, "QA_URI_Reqres");
+
+        // Print response details
+        System.out.println("Response Status Code: " + resObj.getStatusCode());
+        System.out.println("Response Body: " + resObj.asPrettyString());
+
+        // Capture the returned ID from the response
+        returnIdValue = JsonParsing.doParsing(resObj, "id");
+        System.out.println("Captured ID from response: " + returnIdValue);
+
+        // Validate that the user-provided values are present in the response
+        String responseName = JsonParsing.doParsing(resObj, "name");
+        String responseJob = JsonParsing.doParsing(resObj, "job");
+
+        if (nameValue.equals(responseName) && jobValue.equals(responseJob)) {
+            System.out.println("User-provided values are correctly reflected in the response.");
+        } else {
+            System.out.println("User-provided values are not correctly reflected in the response.");
+        }
+    }
+}

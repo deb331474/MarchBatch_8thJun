@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/debasishpruseth/Downloads/DataDrivenFramework"/>
+			<item value="/Users/debasishpruseth/eclipse-workspace/RahulShettyApplication"/>
+			<item value="/Users/debasishpruseth/eclipse-workspace/RahulCucmber"/>
+			<item value="/Users/debasishpruseth/eclipse-workspace/ProgrammingPractice"/>
+			<item value="/Users/debasishpruseth/eclipse-workspace/LiveProject1Rahul"/>
+			<item value="/Users/debasishpruseth/eclipse-workspace/ActiTimeCucumber"/>
+			<item value="/Users/debasishpruseth/eclipse-workspace/CucumberPractice"/>
+			<item value="/Users/debasishpruseth/Downloads/eclipse-workspace_3/eclipse-workspace/SeleniumTesting"/>
+			<item value="/Users/debasishpruseth/Downloads/eclipse-workspace_3/eclipse-workspace_3/CucumberPractice"/>
+			<item value="/Users/debasishpruseth/Downloads/eclipse-workspace_3"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="427"/>
+		<item key="DIALOG_Y_ORIGIN" value="236"/>
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="427"/>
+		<item key="DIALOG_Y_ORIGIN" value="142"/>
+		<item key="DIALOG_WIDTH" value="586"/>
+		<item key="DIALOG_HEIGHT" value="528"/>
+		<item key="DIALOG_FONT_NAME" value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+			<item value="org.eclipse.ui.preferences"/>
+			<item value=""/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+</section>

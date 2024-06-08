@@ -1,0 +1,22 @@
+package org.testing.testScripts;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.PropertiesHandle;
+import org.testng.annotations.Test;
+
+public class TC1_GetAllBooks {
+	
+	@Test
+	public void getAllBooksTest() throws IOException {
+		
+		Properties p=PropertiesHandle.loadProperties("../RestAssuredBookStore/URI.properties");
+		HTTPMethods hm=new HTTPMethods(p);
+		hm.get("QA_URI_Employee");
+		
+		
+	}
+
+}

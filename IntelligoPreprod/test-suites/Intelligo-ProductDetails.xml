@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Intelligo Product Details">
+
+<listeners>
+<listener class-name="in.debasish.utils.ExtentReportManager"/>
+</listeners>
+
+  <test thread-count="2" name="PaginationTest">
+  <test name="Pagination Tests">
+    <classes>
+      <class name="in.debasish.testCases.PaginationTest"/>
+    </classes>
+    </test>
+    </test>
+    <test name="Product Test">
+    <classes>
+    <class name="in.debasish.testCases.SelectAParticularProductTest"></class>
+    </classes>
+    </test>
+ 
+</suite>

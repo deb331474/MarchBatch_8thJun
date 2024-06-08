@@ -1,0 +1,60 @@
+package org.testing.testScripts;
+
+import java.io.IOException;
+import java.util.Properties;
+import java.util.Scanner;
+
+import org.testing.resources.JsonHandle;
+import org.testing.testBase.BaseTest;
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.JsonParsing;
+import org.testing.utilities.JsonReplacement;
+import org.testing.utilities.Log;
+import org.testing.utilities.PropertiesHandle;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class TC3_ReqResPostUsingUserInput extends BaseTest{
+    
+    public static String returnIdValue;
+    
+    @Test
+    public void createUserByInputTest() throws Exception {
+    	Log.info("Test Case: TC3_ReqResPostUsingUserInput started");
+
+        String jsonFilePath = "src/test/java/org/testing/resources/requestBody.json";
+        Log.info("Reading JSON from: " + jsonFilePath);
+        String requestBody = JsonHandle.readJsonData(jsonFilePath);
+
+        HTTPMethods httpMethods = new HTTPMethods(properties);
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter the name value:");
+        String nameValue = scanner.next();
+        requestBody = JsonReplacement.assignJsonValues(requestBody, "name", nameValue);
+
+        System.out.println("Please enter the job value:");
+        String jobValue = scanner.next();
+        requestBody = JsonReplacement.assignJsonValues(requestBody, "job", jobValue);
+
+        Log.info("Request Body after replacements: " + requestBody);
+
+        Response resObj = httpMethods.createUsersbyPost("QA_URI_Reqres", requestBody);
+
+        Log.info("Response from server: " + resObj.asPrettyString());
+
+        returnIdValue = JsonParsing.doParsing(resObj, "id");
+
+        Log.info("Captured ID from response: " + returnIdValue);
+
+        // Assertions
+        Assert.assertNotNull(returnIdValue, "ID value is null.");
+        Assert.assertEquals(JsonParsing.doParsing(resObj, "name"), nameValue, "Name value does not match.");
+        Assert.assertEquals(JsonParsing.doParsing(resObj, "job"), jobValue, "Job value does not match.");
+
+        Log.info("Test Case: TC3_ReqResPostUsingUserInput completed");
+    }
+}

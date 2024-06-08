@@ -1,0 +1,29 @@
+package org.testing.testSteps;
+
+import java.util.Properties;
+
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.Response.*;
+import static io.restassured.RestAssured.*;
+
+public class HTTPMethods {
+	
+private Properties pr;
+    
+    public HTTPMethods(Properties pr){
+        this.pr = pr;
+    }
+    
+    public Response get(String uriKeyName) {
+    	String uriValue=pr.getProperty(uriKeyName);
+		Response res=given().contentType(ContentType.JSON)
+				.when().get(uriValue);
+		
+		System.out.println(res.getStatusCode());
+		System.out.println(res.asPrettyString());
+
+		return res;
+    }
+
+}

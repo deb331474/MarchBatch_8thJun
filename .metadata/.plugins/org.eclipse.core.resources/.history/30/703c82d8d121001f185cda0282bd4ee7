@@ -1,0 +1,10 @@
+package in.debasish.basicOperations;
+
+public class ArmstorngNumbersInRange {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

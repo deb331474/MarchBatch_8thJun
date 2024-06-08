@@ -1,0 +1,52 @@
+package in.debasish.assighnmnts;
+
+import java.io.File;
+import java.time.Duration;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class Assighnment1 {
+
+	public static void main(String[] args) {
+
+		 WebDriver driver = new ChromeDriver();
+
+	        try {
+	           
+	            driver.get("https://www.ajio.com");
+
+	            
+	            driver.manage().window().maximize();
+
+	            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	           
+	            WebElement menMenu = driver.findElement(By.xpath("//span[@aria-label='MEN']"));
+	            Actions actions = new Actions(driver);
+	            actions.moveToElement(menMenu).perform();
+
+	            // Mouse hover on Brands in the opened menu
+	            WebElement brandsMenu = driver.findElement(By.xpath("//li[contains(@data-test,'li-MEN')]//a[normalize-space()='BRANDS']"));
+	            actions.moveToElement(brandsMenu).perform();
+
+	            // Click on brand Gap
+	            WebElement gapBrand = driver.findElement(By.xpath("//li[contains(@data-test,'li-MEN')]//a[contains(@title,'GAP')][normalize-space()='GAP']"));
+	            gapBrand.click();
+	            
+	            Thread.sleep(4000);
+
+	            
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        } finally {
+	            // Close the browser
+	            driver.close();
+	        }
+	}
+
+}

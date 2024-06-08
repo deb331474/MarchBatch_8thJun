@@ -1,0 +1,5 @@
+1696964863282	Move compilation units
+1696964879506	Move compilation units
+1697132256036	Extract local variable 'isEvenPredicate'
+1697132338057	Extract local variable 'squaredFunction'
+1697132405500	Extract local variable 'sysoutConsumer'

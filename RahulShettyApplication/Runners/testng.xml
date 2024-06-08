@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "/Users/debasishpruseth/eclipse-workspace/RahulShettyApplication/testngResources/testng-1.0.dtd">
+
+<suite parallel="tests" name="Suite">
+
+<listeners>
+<listener class-name="com.debasish.testComponents.Listener"/>
+</listeners>
+
+  <test thread-count="5"  name="ErrorValidation">
+    <classes>
+      <class name="com.debasish.testCases.ErrorValidationTest"/>
+    </classes>
+  </test> <!-- ErrorValidation -->
+  
+  <test thread-count="5" name="SubmitOrder">
+    <classes>
+      <class name="com.debasish.testCases.SubmitOrderTest"/>
+    </classes>
+  </test> <!-- ErrorValidation -->
+  
+  <test thread-count="5" name="OrderHistory">
+    <classes>
+      <class name="com.debasish.testCases.OrderHistory"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->

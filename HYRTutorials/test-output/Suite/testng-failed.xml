@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test Google(failed)">
+    <parameter name="author" value="Debasish"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="in.debasish.testCases.CumulativeTests">
+        <methods>
+          <include name="testFacebook"/>
+          <include name="setup"/>
+          <include name="TestGoogle"/>
+          <include name="initialiseExtentReports"/>
+          <include name="teardown"/>
+          <include name="checkStatus"/>
+          <include name="generateExtentReports"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.CumulativeTests -->
+    </classes>
+  </test> <!-- Test Google(failed) -->
+</suite> <!-- Failed suite [Suite] -->

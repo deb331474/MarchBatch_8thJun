@@ -1,0 +1,15 @@
+package org.testing.utilities;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+public class JsonReplacement {
+
+	public static String readAndReplace(String json, String placeholder, String newValue) throws Exception {
+        return json.replace("\"" + placeholder + "\": \"\"", "\"" + placeholder + "\": \"" + newValue + "\"");
+    }
+
+}

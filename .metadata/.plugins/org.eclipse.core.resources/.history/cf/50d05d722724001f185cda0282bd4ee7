@@ -1,0 +1,12 @@
+package org.testing.testScripts;
+
+import org.testing.testBase.BaseTest;
+
+public class TC4_ReqResGetParticular extends BaseTest{
+	
+	public void getPartcular() {
+		
+		
+	}
+
+}

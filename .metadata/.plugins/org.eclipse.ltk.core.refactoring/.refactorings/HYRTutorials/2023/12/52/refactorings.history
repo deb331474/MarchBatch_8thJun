@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;in.debasish.testBase&apos; to &apos;HYRTutorials/src/test/java&apos;&#x0A;- Original project: &apos;HYRTutorials&apos;&#x0A;- Destination element: &apos;HYRTutorials/src/test/java&apos;&#x0A;- Original element: &apos;HYRTutorials/src/test/java/in.debasish.testBase&apos;" description="Copy package" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;in.debasish.testBase" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1703603712791" version="1.0"/>
+</session>

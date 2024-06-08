@@ -1,0 +1,16 @@
+{
+  "id": 2,
+  "name": "Bob",
+  "age": 30,
+  "email": "bob@example.com",
+  "address": {
+    "street": "456 Oak St",
+    "city": "Springfield",
+    "state": "IL",
+    "zip": "62702",
+    "country": "USA"
+  },
+  "isActive": false,
+  "registeredAt": "2024-06-05T10:00:00Z",
+  "tags": ["tag2", "tag3"]
+}

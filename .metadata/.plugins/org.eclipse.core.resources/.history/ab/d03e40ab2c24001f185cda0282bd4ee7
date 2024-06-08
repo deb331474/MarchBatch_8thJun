@@ -1,0 +1,18 @@
+package org.testing.testScripts;
+
+import org.testing.testBase.BaseTest;
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.Log;
+
+public class TC5_GetAllMockbinServer extends BaseTest{
+	
+	public void getAllTest() {
+		Log.info("Test Case: TC5_GetAllMockbinServer started");
+		//String requestBody = JsonHandle.readJsonData("../RestAssuredBookStore/src/test/java/org/testing/resources/requestBody.json");
+		HTTPMethods hm=new HTTPMethods(properties);
+		hm.get("QA_URI_RickMond");
+		Log.info("Test Case_TC5_GetAllMockbinServer finished");
+	
+	}
+
+}

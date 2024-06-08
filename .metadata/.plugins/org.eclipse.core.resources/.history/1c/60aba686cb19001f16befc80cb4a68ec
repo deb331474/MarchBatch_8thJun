@@ -1,0 +1,105 @@
+package in.debasish.assighnmnts;
+
+import java.io.File;
+import java.time.Duration;
+import java.util.List;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class Assighnment1 {
+
+	public static void main(String[] args) {
+
+		 WebDriver driver = new ChromeDriver();
+
+	        try {
+	           
+	            driver.get("https://www.ajio.com");
+
+	            
+	            driver.manage().window().maximize();
+
+	            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+	           
+	            WebElement menMenu = driver.findElement(By.xpath("//span[@aria-label='MEN']"));
+	            Actions actions = new Actions(driver);
+	            actions.moveToElement(menMenu).perform();
+
+	            // Mouse hover on Brands in the opened menu
+	            WebElement brandsMenu = driver.findElement(By.xpath("//li[contains(@data-test,'li-MEN')]//a[normalize-space()='BRANDS']"));
+	            actions.moveToElement(brandsMenu).perform();
+
+	            // Click on brand Gap
+	            WebElement gapBrand = driver.findElement(By.xpath("//li[contains(@data-test,'li-MEN')]//a[contains(@title,'GAP')][normalize-space()='GAP']"));
+	            gapBrand.click();
+
+	            // Sort products by 'low to high'
+	            //driver.findElement(By.cssSelector("label[aria-label='Sort By']")).click();
+	            driver.findElement(By.xpath("//option[@value='prce-asc']")).click();
+	           
+
+	            // Verify products are sorted (basic check)
+	            List<WebElement> prices = driver.findElements(By.xpath("//span[@class='price  ']"));
+	            for (int i = 1; i < prices.size(); i++) {
+	                double previousPrice = Double.parseDouble(prices.get(i - 1).getText().replace("₹", "").replace(",", ""));
+	                double currentPrice = Double.parseDouble(prices.get(i).getText().replace("₹", "").replace(",", ""));
+	                if (previousPrice > currentPrice) {
+	                    System.out.println("Products are not sorted correctly.");
+	                }
+	            }
+
+	            // Apply size filter 'M'
+	            WebElement sizeMFilter = driver.findElement(By.xpath("//label[@for='M']"));
+	            sizeMFilter.click();
+
+	            // Scroll down to the 15th product and go to its product page
+	            List<WebElement> products = driver.findElements(By.xpath("//div[@class='item rilrtl-products-list__item item']"));
+	            WebElement fifteenthProduct = products.get(14); // 0-based index
+	            actions.moveToElement(fifteenthProduct).perform();
+	            fifteenthProduct.click();
+
+	            // Capture the price of the product
+	            WebElement productPriceElement = driver.findElement(By.xpath("//span[@class='price  ']"));
+	            String productPrice = productPriceElement.getText();
+	            System.out.println("Product Price: " + productPrice);
+
+	            // Take a screenshot of the product page
+	            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	            FileUtils.copyFile(screenshot, new File("product_page_gap.png"));
+
+	            // Add the product (size M) to the cart/bag
+	            WebElement sizeMButton = driver.findElement(By.xpath("//div[@class='size-swatch']/button[text()='M']"));
+	            sizeMButton.click();
+	            WebElement addToBagButton = driver.findElement(By.xpath("//button[@class='rilrtl-button ']"));
+	            addToBagButton.click();
+
+	            // Open the cart/bag page
+	            WebElement cartIcon = driver.findElement(By.xpath("//div[@class='ic-cart ']"));
+	            cartIcon.click();
+
+	            // Verify the same product is added to the cart
+	            WebElement cartProductPriceElement = driver.findElement(By.xpath("//span[@class='price  ']"));
+	            String cartProductPrice = cartProductPriceElement.getText();
+	            System.out.println("Cart Product Price: " + cartProductPrice);
+
+	            // Compare and verify the added product's price and order total amount
+	            if (productPrice.equals(cartProductPrice)) {
+	                System.out.println("Product price matches in the cart.");
+	            } else {
+	                System.out.println("Product price does not match in the cart.");
+	            }
+
+	        } catch (Exception e) {
+	            e.printStackTrace();
+	        } finally {
+	            // Close the browser
+	            driver.quit();
+	        }
+	}
+
+}

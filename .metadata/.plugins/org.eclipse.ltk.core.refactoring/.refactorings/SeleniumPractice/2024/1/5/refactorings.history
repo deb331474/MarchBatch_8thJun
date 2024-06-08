@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 5 packages to &apos;ProgrammingPractice/src/main/java&apos;&#x0A;- Original project: &apos;SeleniumPractice&apos;&#x0A;- Destination element: &apos;ProgrammingPractice/src/main/java&apos;&#x0A;- Original elements:&#x0A;     SeleniumPractice/src/StringAndCharArray&#x0A;     SeleniumPractice/src/Collections&#x0A;     SeleniumPractice/src/propertiesDemo&#x0A;     SeleniumPractice/src/Numbers&#x0A;     SeleniumPractice/src/Java8" description="Copy packages" destination="=ProgrammingPractice/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/" element1="/src&lt;StringAndCharArray" element2="/src&lt;Collections" element3="/src&lt;propertiesDemo" element4="/src&lt;Numbers" element5="/src&lt;Java8" flags="589830" fragments="5" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1706641874012" version="1.0"/>
+</session>

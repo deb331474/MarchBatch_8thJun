@@ -1,0 +1,21 @@
+package org.testing.testScripts;
+
+import org.testing.resources.JsonHandle;
+import org.testing.testBase.BaseTest;
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.Log;
+import org.testng.annotations.Test;
+
+public class TC6_CreateUserMockbinServer extends BaseTest{
+	
+	@Test
+	public void createMockbinTest() throws Exception {
+		Log.info("Test Case: TC6_CreateUserMockbinServer started");
+		String requestBody = JsonHandle.readJsonData("../RestAssuredBookStore/src/test/java/org/testing/resources/mockBinrequestBody.json");
+		HTTPMethods hm=new HTTPMethods(properties);
+		hm.createUsersbyPost(requestBody,"QA_URI_MyMockBin");
+		Log.info("TestCase: TC6_CreateUserMockbinServer finished");
+	
+	}
+
+}

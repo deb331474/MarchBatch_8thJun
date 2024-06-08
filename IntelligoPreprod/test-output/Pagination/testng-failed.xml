@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Pagination]">
+  <listeners>
+    <listener class-name="in.debasish.utils.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Intelligo(failed)">
+    <classes>
+      <class name="in.debasish.testCases.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.LoginTest -->
+      <class name="in.debasish.testCases.PaginationTest">
+        <methods>
+          <include name="paginationNavigation"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- in.debasish.testCases.PaginationTest -->
+    </classes>
+  </test> <!-- Intelligo(failed) -->
+</suite> <!-- Failed suite [Pagination] -->

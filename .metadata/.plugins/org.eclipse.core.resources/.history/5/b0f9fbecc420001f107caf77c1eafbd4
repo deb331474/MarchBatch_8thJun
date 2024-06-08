@@ -1,0 +1,61 @@
+package org.testing.testSteps;
+
+import java.util.Properties;
+
+import org.testing.utilities.Log;
+
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import static io.restassured.RestAssured.*;
+
+public class HTTPMethods {
+	
+private Properties pr;
+    
+    public HTTPMethods(Properties pr){
+        this.pr = pr;
+    }
+    
+    public Response get(String uriKeyName) {
+    	String uriValue=pr.getProperty(uriKeyName);
+		Response res=given().contentType(ContentType.JSON)
+				.when().get(uriValue);
+		
+		Log.info("GET Request to URI: " + uriKeyName);
+        Log.info("Response Status Code: " + res.getStatusCode());
+        Log.info("Response Body: " + res.asPrettyString());
+
+		return res;
+    }
+    
+    public Response createUsersbyPost(String jsonBody,String uriKeyName) {
+    	
+    	String uriValue=pr.getProperty(uriKeyName);
+    	Response res=given().contentType(ContentType.JSON).body(jsonBody)
+    			.when().post(uriValue);
+    	
+    	System.out.println(res.getStatusCode());
+		System.out.println(res.asPrettyString());
+
+		return res;
+    	
+    }
+    
+    public Response createUserRequestwithId(String jsonBody,String uriKeyName,String endPoint) {
+    	
+    	String url=pr.getProperty(uriKeyName)+"/"+endPoint;
+    	
+    	Response res=given().contentType(ContentType.JSON)
+    			.body(jsonBody)
+    			.when()
+    			.post(url);
+    	
+    	System.out.println(res.getStatusCode());
+		System.out.println(res.asPrettyString());
+
+		return res;
+    	
+    	
+    }
+
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite">
+	<test name="Test Google">
+		<parameter name="browserName" value="Chrome" />
+		<parameter name="author" value="Debasish" />
+		<classes>
+			<class name="in.debasish.testCases.CumulativeTests">
+				<methods>
+					<include name="TestGoogle" />
+					<include name="testFacebook" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+	
+	</suite> <!-- Suite -->

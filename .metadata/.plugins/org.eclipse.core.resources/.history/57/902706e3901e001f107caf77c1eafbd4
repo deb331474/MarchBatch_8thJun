@@ -1,0 +1,35 @@
+package org.testing.testScripts;
+
+import java.io.IOException;
+import java.util.Properties;
+import java.util.Scanner;
+
+import org.testing.resources.JsonHandle;
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.JsonParsing;
+import org.testing.utilities.JsonReplacement;
+import org.testing.utilities.PropertiesHandle;
+import org.testng.annotations.Test;
+
+import groovyjarjarantlr4.v4.parse.ANTLRParser.actionScopeName_return;
+import io.restassured.response.Response;
+
+public class TC3_PostUsingUserInput {
+	
+	public static String returnIdValue;
+	
+	@Test
+	public void createUserByInputTest() throws Exception {
+		Properties p=PropertiesHandle.loadProperties("../RestAssuredBookStore/URI.properties");
+		String requestBody=JsonHandle.readJsonData("../RestAssuredBookStore/src/test/java/org/testing/resources/requestBody.json");
+		HTTPMethods h=new HTTPMethods(p);
+		System.out.println("Please enter the id value");
+		Scanner s=new Scanner(System.in);
+		Integer idValue=s.nextInt();
+		requestBody=JsonReplacement.assighnJsonValues(requestBody, "id", idValue.toString());
+		Response resObj=h.createUsersbyPost(requestBody, "QA_URI_Reqres");
+		returnIdValue=JsonParsing.doParsing(resObj, "id");
+		
+	}
+
+}

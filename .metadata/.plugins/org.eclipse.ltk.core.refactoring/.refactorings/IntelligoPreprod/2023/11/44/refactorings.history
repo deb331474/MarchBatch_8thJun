@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;IntelligoPreprod/test-suites/testng.xml&apos; to &apos;pagination.xml&apos;" description="Rename resource &apos;testng.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="test-suites/testng.xml" name="pagination.xml" stamp="1698937417245" updateReferences="true"/>
+</session>

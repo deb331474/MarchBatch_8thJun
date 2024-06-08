@@ -1,0 +1,49 @@
+package org.testing.testScripts;
+
+import java.io.IOException;
+import java.util.Properties;
+import java.util.Scanner;
+
+import org.testing.resources.JsonHandle;
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.JsonParsing;
+import org.testing.utilities.JsonReplacement;
+import org.testing.utilities.PropertiesHandle;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class TC3_PostUsingUserInput {
+    
+    public static String returnIdValue;
+    
+    @Test
+    public void createUserByInputTest() throws Exception {
+        Properties p = PropertiesHandle.loadProperties("../RestAssuredBookStore/URI.properties");
+        String requestBody = JsonHandle.readJsonData("../RestAssuredBookStore/src/test/java/org/testing/resources/requestBody.json");
+        HTTPMethods h = new HTTPMethods(p);
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter the id value:");
+        String idValue = scanner.next();
+        System.out.println("Please enter the name value:");
+        String nameValue = scanner.next();
+        System.out.println("Please enter the job value:");
+        String jobValue = scanner.next();
+        scanner.close();
+
+
+		Response resObj = h.createUsersbyPost(requestBody, "QA_URI_Reqres");
+		System.out.println("Response from server:");
+		System.out.println(resObj.asPrettyString());
+
+		returnIdValue = JsonParsing.doParsing(resObj, "id");
+		System.out.println("Captured ID from response: " + returnIdValue);
+
+		String responseId = JsonParsing.doParsing(resObj, "id");
+
+		Assert.assertNotNull(responseId, "ID should not be null in the response.");
+		System.out.println("Test passed. ID is returned: " + responseId);
+    }
+}

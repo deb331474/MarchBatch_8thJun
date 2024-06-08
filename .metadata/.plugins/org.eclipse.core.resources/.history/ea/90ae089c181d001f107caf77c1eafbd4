@@ -1,0 +1,23 @@
+package org.testing.testScripts;
+
+import java.io.IOException;
+import java.util.Properties;
+
+import org.testing.resources.JsonHandle;
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.PropertiesHandle;
+import org.testng.annotations.Test;
+
+public class TC2_CreateParticularPOST {
+	
+	@Test
+	public void createPostRequest() throws Exception {
+		
+		Properties p=PropertiesHandle.loadProperties("../RestAssuredBookStore/URI.properties");
+		String requestBody=JsonHandle.readJsonData("../RestAssuredBookStore/src/test/java/org/testing/resources/requestBody.json");
+		HTTPMethods h=new HTTPMethods(p);
+		h.createBookbyPost(requestBody, "QA_URI_BooksStore");
+		
+	}
+
+}

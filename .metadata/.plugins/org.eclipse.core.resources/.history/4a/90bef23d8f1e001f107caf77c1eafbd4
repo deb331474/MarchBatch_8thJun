@@ -1,0 +1,29 @@
+package org.testing.testScripts;
+
+import java.io.IOException;
+import java.util.Properties;
+import java.util.Scanner;
+
+import org.testing.resources.JsonHandle;
+import org.testing.testSteps.HTTPMethods;
+import org.testing.utilities.PropertiesHandle;
+import org.testng.annotations.Test;
+
+import groovyjarjarantlr4.v4.parse.ANTLRParser.actionScopeName_return;
+
+public class TC3_PostUsingUserInput {
+	
+	public static String returnIdValue;
+	
+	@Test
+	public void createUserByInputTest() throws Exception {
+		Properties p=PropertiesHandle.loadProperties("../RestAssuredBookStore/URI.properties");
+		String requestBody=JsonHandle.readJsonData("../RestAssuredBookStore/src/test/java/org/testing/resources/requestBody.json");
+		HTTPMethods h=new HTTPMethods(p);
+		Scanner s=new Scanner(System.in);
+		Integer idValue=s.nextInt();
+		
+		
+	}
+
+}

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-09T21:17:23 IST" name="Suite" finished-at="2024-01-09T21:17:45 IST" duration-ms="22406">
+    <groups>
+    </groups>
+    <test started-at="2024-01-09T21:17:23 IST" name="ErrorValidation" finished-at="2024-01-09T21:17:31 IST" duration-ms="8096">
+      <class name="com.debasish.testCases.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.debasish.testCases.ErrorValidationTest@2d901eb0]" started-at="2024-01-09T21:17:23 IST" name="launchApplication" finished-at="2024-01-09T21:17:26 IST" duration-ms="3430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="errorProductValidation()[pri:0, instance:com.debasish.testCases.ErrorValidationTest@2d901eb0]" started-at="2024-01-09T21:17:26 IST" name="errorProductValidation" finished-at="2024-01-09T21:17:28 IST" duration-ms="1954" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorProductValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.debasish.testCases.ErrorValidationTest@2d901eb0]" started-at="2024-01-09T21:17:28 IST" name="tearDown" finished-at="2024-01-09T21:17:29 IST" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.debasish.testCases.ErrorValidationTest@2d901eb0]" started-at="2024-01-09T21:17:29 IST" name="launchApplication" finished-at="2024-01-09T21:17:30 IST" duration-ms="1653" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="getErrorMessage()[pri:0, instance:com.debasish.testCases.ErrorValidationTest@2d901eb0]" started-at="2024-01-09T21:17:30 IST" name="getErrorMessage" finished-at="2024-01-09T21:17:31 IST" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.debasish.testCases.ErrorValidationTest@2d901eb0]" started-at="2024-01-09T21:17:31 IST" name="tearDown" finished-at="2024-01-09T21:17:31 IST" duration-ms="110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.debasish.testCases.ErrorValidationTest -->
+    </test> <!-- ErrorValidation -->
+    <test started-at="2024-01-09T21:17:23 IST" name="SubmitOrder" finished-at="2024-01-09T21:17:35 IST" duration-ms="11771">
+      <class name="com.debasish.testCases.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.debasish.testCases.SubmitOrderTest@2de56eb2]" started-at="2024-01-09T21:17:23 IST" name="launchApplication" finished-at="2024-01-09T21:17:26 IST" duration-ms="3318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.debasish.testCases.SubmitOrderTest@2de56eb2]" started-at="2024-01-09T21:17:26 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-09T21:17:29 IST" duration-ms="2742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Debudon@211, product=ZARA COAT 3, email=rupesh.debasish279@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.debasish.testCases.SubmitOrderTest@2de56eb2]" started-at="2024-01-09T21:17:29 IST" name="tearDown" finished-at="2024-01-09T21:17:29 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.debasish.testCases.SubmitOrderTest@2de56eb2]" started-at="2024-01-09T21:17:29 IST" name="launchApplication" finished-at="2024-01-09T21:17:32 IST" duration-ms="2898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:com.debasish.testCases.SubmitOrderTest@2de56eb2]" started-at="2024-01-09T21:17:32 IST" name="submitOrder" data-provider="getData" finished-at="2024-01-09T21:17:35 IST" duration-ms="2523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Debudon@211, product=ADIDAS ORIGINAL, email=deb331474@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.debasish.testCases.SubmitOrderTest@2de56eb2]" started-at="2024-01-09T21:17:35 IST" name="tearDown" finished-at="2024-01-09T21:17:35 IST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.debasish.testCases.SubmitOrderTest -->
+    </test> <!-- SubmitOrder -->
+    <test started-at="2024-01-09T21:17:23 IST" name="OrderHistory" finished-at="2024-01-09T21:17:45 IST" duration-ms="22406">
+      <class name="com.debasish.testCases.OrderHistory">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.debasish.testCases.OrderHistory@3cce5371]" started-at="2024-01-09T21:17:23 IST" name="launchApplication" finished-at="2024-01-09T21:17:26 IST" duration-ms="3230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistory(java.util.HashMap)[pri:0, instance:com.debasish.testCases.OrderHistory@3cce5371]" started-at="2024-01-09T21:17:26 IST" name="orderHistory" data-provider="getData" finished-at="2024-01-09T21:17:35 IST" duration-ms="8407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Debudon@211, product=ZARA COAT 3, email=rupesh.debasish279@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.debasish.testCases.OrderHistory@3cce5371]" started-at="2024-01-09T21:17:35 IST" name="tearDown" finished-at="2024-01-09T21:17:35 IST" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.debasish.testCases.OrderHistory@3cce5371]" started-at="2024-01-09T21:17:35 IST" name="launchApplication" finished-at="2024-01-09T21:17:37 IST" duration-ms="2527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistory(java.util.HashMap)[pri:0, instance:com.debasish.testCases.OrderHistory@3cce5371]" started-at="2024-01-09T21:17:37 IST" name="orderHistory" data-provider="getData" finished-at="2024-01-09T21:17:45 IST" duration-ms="7867" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Debudon@211, product=ADIDAS ORIGINAL, email=deb331474@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistory -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.debasish.testCases.OrderHistory@3cce5371]" started-at="2024-01-09T21:17:45 IST" name="tearDown" finished-at="2024-01-09T21:17:45 IST" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.debasish.testCases.OrderHistory -->
+    </test> <!-- OrderHistory -->
+  </suite> <!-- Suite -->
+</testng-results>

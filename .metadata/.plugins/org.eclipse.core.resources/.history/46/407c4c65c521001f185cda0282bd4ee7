@@ -1,0 +1,95 @@
+package in.debasish.generalStore;
+
+import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import com.google.common.collect.ImmutableMap;
+
+import in.debasish.testBase.BaseClass;
+import io.appium.java_client.AppiumBy;
+
+public class eCommerceAddProductTest extends BaseClass {
+
+    @Test
+    public void addtoCart() throws InterruptedException {
+        driver.findElement(By.id("com.androidsample.generalstore:id/nameField")).sendKeys("Debasish");
+        driver.hideKeyboard();
+
+        Thread.sleep(4000);
+
+        driver.findElement(By.id("com.androidsample.generalstore:id/radioFemale")).click();
+
+        driver.findElement(By.id("com.androidsample.generalstore:id/spinnerCountry")).click();
+
+        driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"India\"))"));
+
+        Thread.sleep(3000);
+
+        driver.findElement(By.xpath("//android.widget.TextView[@text='India']")).click();
+
+        driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
+
+        Thread.sleep(4000);
+
+        String[] productsToAdd = {"Air Jordan 9 Retro", "Jordan 6 Rings"};
+        Set<String> productsAdded = new HashSet<>();
+
+        while (productsAdded.size() < productsToAdd.length) {
+            List<WebElement> allProducts = driver.findElements(By.id("com.androidsample.generalstore:id/productName"));
+            List<WebElement> addToCartButtons = driver.findElements(By.id("com.androidsample.generalstore:id/productAddCart"));
+
+            for (int i = 0; i < allProducts.size(); i++) {
+                WebElement productElement = allProducts.get(i);
+                String productName = productElement.getText();
+
+                if (productsAdded.contains(productName)) {
+                    continue;
+                }
+
+                for (String product : productsToAdd) {
+                    if (productName.equalsIgnoreCase(product)) {
+                        addToCartButtons.get(i).click();
+                        productsAdded.add(productName);
+                        Thread.sleep(3000);
+                        break;
+                    }
+                }
+
+                if (productsAdded.size() == productsToAdd.length) {
+                    break;
+                }
+            }
+
+            if (productsAdded.size() < productsToAdd.length) {
+                ((JavascriptExecutor) driver).executeScript("mobile: scrollGesture", ImmutableMap.of(
+                        "left", 100, "top", 100, "width", 200, "height", 200,
+                        "direction", "down",
+                        "percent", 5.0
+                ));
+            }
+        }
+        
+        driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
+        
+        String airJordanPrice=driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"$170.97\")")).getText().replace("$", "");
+        System.out.println(airJordanPrice);
+        String Jordan6RingsPrice=driver.findElement(AppiumBy.androidUIAutomator("new UiSelector().text(\"$165.0\")")).getText().replace("$", "");
+        System.out.println(Jordan6RingsPrice);
+        String totalPurchaseAmnt=driver.findElement(By.id("com.androidsample.generalstore:id/totalAmountLbl")).getText().replace("$", "");
+        System.out.println(totalPurchaseAmnt);
+        
+        float totalPrice=Float.parseFloat(airJordanPrice)+Float.parseFloat(Jordan6RingsPrice);
+        
+        Assert.assertEquals(totalPrice,335.97);
+        
+        
+        
+    }
+}

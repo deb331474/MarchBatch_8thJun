@@ -1,0 +1,15 @@
+package org.testing.utilities;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class JsonReplacement {
+
+    public static String readAndReplace(String filePath, String name, String job) throws IOException {
+        String jsonTemplate = new String(Files.readAllBytes(Paths.get(filePath)));
+        jsonTemplate = jsonTemplate.replace("{{name}}", name);
+        jsonTemplate = jsonTemplate.replace("{{job}}", job);
+        return jsonTemplate;
+    }
+}

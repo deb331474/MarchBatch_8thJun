@@ -1,0 +1,6 @@
+QA_URI_API:http://localhost:3000/APIBatchStudents
+QA_URI_Selenium:http://localhost:3000/SeleniumBatchStudents
+QA_URI_DevOps:http://localhost:3000/DevopsBatchStudents
+QA_URI_SDET:http://localhost:3000/SDETBatchStudents
+QA_URI_BooksStore:https://demoqa.com/BookStore/v1/Books
+QA_URI_Reqres:https://reqres.in/api/users

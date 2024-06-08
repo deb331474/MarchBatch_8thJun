@@ -1,0 +1,9 @@
+
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="in.debasish.tests.WatirTests"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

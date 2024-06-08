@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;in.debasish.TestBase&apos; to &apos;RahulAroraDataDriven1/src/test/java&apos;&#x0A;- Original project: &apos;RahulAroraDataDriven1&apos;&#x0A;- Destination element: &apos;RahulAroraDataDriven1/src/test/java&apos;&#x0A;- Original element: &apos;RahulAroraDataDriven1/src/test/java/in.debasish.TestBase&apos;" description="Copy package" destination="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/" element1="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;in.debasish.TestBase" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1703508670876" version="1.0"/>
+</session>

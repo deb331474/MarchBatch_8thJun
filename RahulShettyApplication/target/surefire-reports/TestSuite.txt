@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 28.24 s <<< FAILURE! - in TestSuite
+errorProductValidation(com.debasish.testCases.ErrorValidationTest)  Time elapsed: 1.619 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+Element <button class="btn btn-custom"> is not clickable at point (1198,26) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6481060e-5779-4756-a8df-7cf45daf672c, clickElement {id=27bca45d-6502-48da-ac31-1b04b37004af}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:20622, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.0.0, moz:processID: 78617, moz:profile: /var/folders/yw/64mq6cx54mq..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:20622/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on mac (6481060e-5779-4756-a8df-7cf45daf672c)] -> css selector: [routerlink*='cart']]
+Session ID: 6481060e-5779-4756-a8df-7cf45daf672c
+	at com.debasish.testCases.ErrorValidationTest.errorProductValidation(ErrorValidationTest.java:36)
+
+submitOrder(com.debasish.testCases.SubmitOrderTest)  Time elapsed: 1.553 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+Element <button class="btn btn-custom"> is not clickable at point (1198,26) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [7b6db3aa-7374-4956-a08f-bbeeb411e1bc, clickElement {id=d0666614-a8b5-4d5b-953b-e1db4bf5ed5a}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:40808, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.0.0, moz:processID: 78711, moz:profile: /var/folders/yw/64mq6cx54mq..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:40808/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on mac (7b6db3aa-7374-4956-a08f-bbeeb411e1bc)] -> css selector: [routerlink*='cart']]
+Session ID: 7b6db3aa-7374-4956-a08f-bbeeb411e1bc
+	at com.debasish.testCases.SubmitOrderTest.submitOrder(SubmitOrderTest.java:33)
+
+submitOrder(com.debasish.testCases.SubmitOrderTest)  Time elapsed: 1.555 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+Element <button class="btn btn-custom"> is not clickable at point (1198,26) because another element <div class="ngx-spinner-overlay ng-tns-c31-1 ng-trigger ng-trigger-fadeIn ng-star-inserted ng-animating"> obscures it
+Build info: version: '4.14.1', revision: '03f8ede370'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [46bf9d53-dc5e-4e20-a2aa-942083f0b77b, clickElement {id=89746c91-067d-4284-84c1-bbc6e115475f}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 121.0.1, moz:accessibilityChecks: false, moz:buildID: 20240108143603, moz:debuggerAddress: 127.0.0.1:40213, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 23.0.0, moz:processID: 78760, moz:profile: /var/folders/yw/64mq6cx54mq..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://127.0.0.1:40213/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on mac (46bf9d53-dc5e-4e20-a2aa-942083f0b77b)] -> css selector: [routerlink*='cart']]
+Session ID: 46bf9d53-dc5e-4e20-a2aa-942083f0b77b
+	at com.debasish.testCases.SubmitOrderTest.submitOrder(SubmitOrderTest.java:33)
+

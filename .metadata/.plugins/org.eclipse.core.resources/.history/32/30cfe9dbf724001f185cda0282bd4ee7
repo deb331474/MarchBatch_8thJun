@@ -1,0 +1,404 @@
+2024-06-05 20:07:11 [main] INFO  Log:15 - Before Suite: Setup global resources.
+2024-06-05 20:07:11 [main] INFO  Log:15 - Before Test: Setup test-specific resources.
+2024-06-05 20:07:11 [main] INFO  Log:15 - Before Class: Initialize properties and setup prerequisites.
+2024-06-05 20:07:11 [main] INFO  Log:15 - Test Case: TC3_ReqResPostUsingUserInput started
+2024-06-05 20:07:23 [main] INFO  Log:15 - Request Body after replacements: {}
+2024-06-05 20:07:23 [main] INFO  Log:15 - After Class: Cleanup operations.
+2024-06-05 20:07:23 [main] INFO  Log:15 - After Test: Cleanup test-specific resources.
+2024-06-05 20:07:23 [main] INFO  Log:15 - After Suite: Cleanup global resources.
+2024-06-07 13:58:19 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://reqres.in:443
+2024-06-07 13:58:19 DEBUG DefaultClientConnectionOperator:177 - Connecting to reqres.in:443
+2024-06-07 13:58:19 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2024-06-07 13:58:19 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2024-06-07 13:58:19 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2024-06-07 13:58:19 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2024-06-07 13:58:19 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2024-06-07 13:58:19 DEBUG DefaultClientConnection:274 - Sending request: POST /api/users HTTP/1.1
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "POST /api/users HTTP/1.1[\r][\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "Content-Length: 40[\r][\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "Host: reqres.in[\r][\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "[\r][\n]"
+2024-06-07 13:58:19 DEBUG headers:278 - >> POST /api/users HTTP/1.1
+2024-06-07 13:58:19 DEBUG headers:281 - >> Accept: */*
+2024-06-07 13:58:19 DEBUG headers:281 - >> Content-Type: application/json
+2024-06-07 13:58:19 DEBUG headers:281 - >> Content-Length: 40
+2024-06-07 13:58:19 DEBUG headers:281 - >> Host: reqres.in
+2024-06-07 13:58:19 DEBUG headers:281 - >> Connection: Keep-Alive
+2024-06-07 13:58:19 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2024-06-07 13:58:19 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2024-06-07 13:58:19 DEBUG wire:73 -  >> "{[\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> ""name": "{{name}}",[\n]"
+2024-06-07 13:58:19 DEBUG wire:73 -  >> ""job": "{{job}}"[\n]"
+2024-06-07 13:58:19 DEBUG wire:87 -  >> "}"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "HTTP/1.1 201 Created[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Date: Fri, 07 Jun 2024 08:28:20 GMT[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Content-Length: 85[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1717748900&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RrECJchwsbxkBsnu2VUMNdrulKZX%2BwCqVV3RqqOjWrE%3D"}]}[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1717748900&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RrECJchwsbxkBsnu2VUMNdrulKZX%2BwCqVV3RqqOjWrE%3D[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "X-Powered-By: Express[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Access-Control-Allow-Origin: *[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Etag: W/"55-xlrozURtmdK3XI+VLbF9Y84g3g8"[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Via: 1.1 vegur[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "CF-RAY: 88ff44a04fd3a8f9-MAA[\r][\n]"
+2024-06-07 13:58:20 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 13:58:20 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 201 Created
+2024-06-07 13:58:20 DEBUG headers:262 - << HTTP/1.1 201 Created
+2024-06-07 13:58:20 DEBUG headers:265 - << Date: Fri, 07 Jun 2024 08:28:20 GMT
+2024-06-07 13:58:20 DEBUG headers:265 - << Content-Type: application/json; charset=utf-8
+2024-06-07 13:58:20 DEBUG headers:265 - << Content-Length: 85
+2024-06-07 13:58:20 DEBUG headers:265 - << Connection: keep-alive
+2024-06-07 13:58:20 DEBUG headers:265 - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1717748900&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RrECJchwsbxkBsnu2VUMNdrulKZX%2BwCqVV3RqqOjWrE%3D"}]}
+2024-06-07 13:58:20 DEBUG headers:265 - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1717748900&sid=c4c9725f-1ab0-44d8-820f-430df2718e11&s=RrECJchwsbxkBsnu2VUMNdrulKZX%2BwCqVV3RqqOjWrE%3D
+2024-06-07 13:58:20 DEBUG headers:265 - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-06-07 13:58:20 DEBUG headers:265 - << X-Powered-By: Express
+2024-06-07 13:58:20 DEBUG headers:265 - << Access-Control-Allow-Origin: *
+2024-06-07 13:58:20 DEBUG headers:265 - << Etag: W/"55-xlrozURtmdK3XI+VLbF9Y84g3g8"
+2024-06-07 13:58:20 DEBUG headers:265 - << Via: 1.1 vegur
+2024-06-07 13:58:20 DEBUG headers:265 - << CF-Cache-Status: DYNAMIC
+2024-06-07 13:58:20 DEBUG headers:265 - << Server: cloudflare
+2024-06-07 13:58:20 DEBUG headers:265 - << CF-RAY: 88ff44a04fd3a8f9-MAA
+2024-06-07 13:58:20 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2024-06-07 13:58:20 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json; charset=utf-8
+2024-06-07 13:58:20 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-06-07 13:58:20 DEBUG wire:87 -  << "{"name":"{{name}}","job":"{{job}}","id":"186","createdAt":"2024-06-07T08:28:20.130Z"}"
+2024-06-07 13:58:20 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@5e65afb6
+2024-06-07 13:58:20 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely
+2024-06-07 13:58:43 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://10a9bd8b46a04a9890445b743c4cd1b0.api.mockbin.io:443
+2024-06-07 13:58:43 DEBUG DefaultClientConnectionOperator:177 - Connecting to 10a9bd8b46a04a9890445b743c4cd1b0.api.mockbin.io:443
+2024-06-07 13:58:43 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2024-06-07 13:58:43 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2024-06-07 13:58:43 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2024-06-07 13:58:43 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2024-06-07 13:58:43 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2024-06-07 13:58:43 DEBUG DefaultClientConnection:274 - Sending request: POST / HTTP/1.1
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "POST / HTTP/1.1[\r][\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "Content-Length: 299[\r][\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "Host: 10a9bd8b46a04a9890445b743c4cd1b0.api.mockbin.io[\r][\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "[\r][\n]"
+2024-06-07 13:58:43 DEBUG headers:278 - >> POST / HTTP/1.1
+2024-06-07 13:58:43 DEBUG headers:281 - >> Accept: */*
+2024-06-07 13:58:43 DEBUG headers:281 - >> Content-Type: application/json
+2024-06-07 13:58:43 DEBUG headers:281 - >> Content-Length: 299
+2024-06-07 13:58:43 DEBUG headers:281 - >> Host: 10a9bd8b46a04a9890445b743c4cd1b0.api.mockbin.io
+2024-06-07 13:58:43 DEBUG headers:281 - >> Connection: Keep-Alive
+2024-06-07 13:58:43 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2024-06-07 13:58:43 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "{[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  "id": 2,[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  "name": "Bob",[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  "age": 30,[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  "email": "bob@example.com",[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  "address": {[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "    "street": "456 Oak St",[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "    "city": "Springfield",[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "    "state": "IL",[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "    "zip": "62702",[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "    "country": "USA"[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  },[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  "isActive": false,[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  "registeredAt": "2024-06-05T10:00:00Z",[\n]"
+2024-06-07 13:58:43 DEBUG wire:73 -  >> "  "tags": ["tag2", "tag3"][\n]"
+2024-06-07 13:58:43 DEBUG wire:87 -  >> "}"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Date: Fri, 07 Jun 2024 08:28:45 GMT[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "zp-rid: 8bcd007c-5e1d-4342-9cf9-e8e6172feb31[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=laOVp5vGrXbEFxWUeZHEV1ot3HEqGuBPi5J5pPfFPvQS1DK%2B8pVIRGL%2Fy%2FMElSM8FM%2BB0klF6E4xVIQ79OsVcgRVAtRJfIteGQwnLGuwBCpDKa89w1ixjTUZ7oBslKacefG3qWcDXuMy4wHnCn6mzAGLamqwys7F%2BCJBQiTZ%2F4iZ0g%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "CF-RAY: 88ff4537893c17a4-MAA[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 13:58:45 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2024-06-07 13:58:45 DEBUG headers:262 - << HTTP/1.1 200 OK
+2024-06-07 13:58:45 DEBUG headers:265 - << Date: Fri, 07 Jun 2024 08:28:45 GMT
+2024-06-07 13:58:45 DEBUG headers:265 - << Content-Type: application/json
+2024-06-07 13:58:45 DEBUG headers:265 - << Transfer-Encoding: chunked
+2024-06-07 13:58:45 DEBUG headers:265 - << Connection: keep-alive
+2024-06-07 13:58:45 DEBUG headers:265 - << Cache-Control: no-cache
+2024-06-07 13:58:45 DEBUG headers:265 - << zp-rid: 8bcd007c-5e1d-4342-9cf9-e8e6172feb31
+2024-06-07 13:58:45 DEBUG headers:265 - << Vary: Accept-Encoding
+2024-06-07 13:58:45 DEBUG headers:265 - << Content-Encoding: gzip
+2024-06-07 13:58:45 DEBUG headers:265 - << CF-Cache-Status: DYNAMIC
+2024-06-07 13:58:45 DEBUG headers:265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=laOVp5vGrXbEFxWUeZHEV1ot3HEqGuBPi5J5pPfFPvQS1DK%2B8pVIRGL%2Fy%2FMElSM8FM%2BB0klF6E4xVIQ79OsVcgRVAtRJfIteGQwnLGuwBCpDKa89w1ixjTUZ7oBslKacefG3qWcDXuMy4wHnCn6mzAGLamqwys7F%2BCJBQiTZ%2F4iZ0g%3D%3D"}],"group":"cf-nel","max_age":604800}
+2024-06-07 13:58:45 DEBUG headers:265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2024-06-07 13:58:45 DEBUG headers:265 - << Server: cloudflare
+2024-06-07 13:58:45 DEBUG headers:265 - << CF-RAY: 88ff4537893c17a4-MAA
+2024-06-07 13:58:45 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2024-06-07 13:58:45 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2024-06-07 13:58:45 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json
+2024-06-07 13:58:45 DEBUG wire:73 -  << "e5[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]<[0x8f]1O[0x3]1[0xc][0x85][0xf7][0xfb][0x15][0x96][0xe7][0x16][0xe5][0xd2]r[0xa0]L[0xdc][0xc0][0x80][0xd4][0xed][0xca][0x2]b[0x88].[0xe6]d)[0xb9][0x9e][0x12][0xb7]*T[0xfd][0xef][0xc8][0x81][0xb2][0xd9][0xdf]{~z[0xbe]4[0x0][0xc8][0x1][0x1d][0xb4]+[0x1d]g[0x9f][0x8][0x1d]`[0x1f]y$[0xac][0xc8]OJ[0xec]}](y[0x8e]j[0xf0]jx[0xa2][0xb3]OK[0xa4][0xbb][0xf1][0x90][0xfe][0xcc]!d*[0x5][0x1d]\[0x1a][0x0][0x0],[0x92][0x89]D/Z[0xbb][0x81][0xe7][0x98]`[0x90]j[0x5][0xc0][0x91][0xe5]K[0x95]a[0xc9]<O[0x9f]L1[0xdc][0xa4]"^j[0x91][0x97][0xdd][\r]}[0xf3][0xa2][0xa0][0xb3][0xf][0xa6][0xfd]O8[0x1c]g[0xc9]5[0xe4]u[0xe8][0xb1][0x1][0xb8][0xd6][0x1a]\[0xfa]Q[0xf8][0xa4][0x9][0x92][0x8f]TY[0xa6][0x89][0x8b]P[0xa6][0xd0][0xd7]>[0xd6][0xd8][0xed][0xda]tk[0xd3][0xed][0xcd][0xa3]3[0xc6][0x19][0xf3][0xf6][0xfb][0x84][0xf8]I?x[0xd7][0xa1][0xc5]U[0x5][0x16]?[0x9a][0xeb][0xf][0x0][0x0][0x0][0xff][0xff][0x3][0x0]e[0xc3][0xdf][0xd1].[0x1][0x0][0x0]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "0[\r][\n]"
+2024-06-07 13:58:45 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 13:58:45 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-06-07 13:59:21 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://10a9bd8b46a04a9890445b743c4cd1b0.api.mockbin.io:443
+2024-06-07 13:59:21 DEBUG DefaultClientConnectionOperator:177 - Connecting to 10a9bd8b46a04a9890445b743c4cd1b0.api.mockbin.io:443
+2024-06-07 13:59:21 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2024-06-07 13:59:21 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2024-06-07 13:59:21 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2024-06-07 13:59:21 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2024-06-07 13:59:21 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2024-06-07 13:59:21 DEBUG DefaultClientConnection:274 - Sending request: POST / HTTP/1.1
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "POST / HTTP/1.1[\r][\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "Content-Length: 299[\r][\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "Host: 10a9bd8b46a04a9890445b743c4cd1b0.api.mockbin.io[\r][\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "[\r][\n]"
+2024-06-07 13:59:21 DEBUG headers:278 - >> POST / HTTP/1.1
+2024-06-07 13:59:21 DEBUG headers:281 - >> Accept: */*
+2024-06-07 13:59:21 DEBUG headers:281 - >> Content-Type: application/json
+2024-06-07 13:59:21 DEBUG headers:281 - >> Content-Length: 299
+2024-06-07 13:59:21 DEBUG headers:281 - >> Host: 10a9bd8b46a04a9890445b743c4cd1b0.api.mockbin.io
+2024-06-07 13:59:21 DEBUG headers:281 - >> Connection: Keep-Alive
+2024-06-07 13:59:21 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2024-06-07 13:59:21 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "{[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  "id": 2,[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  "name": "Bob",[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  "age": 30,[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  "email": "bob@example.com",[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  "address": {[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "    "street": "456 Oak St",[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "    "city": "Springfield",[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "    "state": "IL",[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "    "zip": "62702",[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "    "country": "USA"[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  },[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  "isActive": false,[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  "registeredAt": "2024-06-05T10:00:00Z",[\n]"
+2024-06-07 13:59:21 DEBUG wire:73 -  >> "  "tags": ["tag2", "tag3"][\n]"
+2024-06-07 13:59:21 DEBUG wire:87 -  >> "}"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Date: Fri, 07 Jun 2024 08:29:22 GMT[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "zp-rid: 0ea592c0-7898-444a-8371-f75031aa9617[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=BBMcSE6YCmG5XnfWPqkdKfix1ChMPTLMZOLYqjp%2F0W4Z54h45ecD75up7G1awTwiDUZ%2F9r%2FWEN5iL4CKWU16aNBlEiTgClXIVpw5rfRa%2BLrYa3hjjmEta8Ec6MyZPhS5awkqMN4DBstgx6fq0rFw5Gd6eSfAL3sYTzQTgkAO0O0z7A%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "CF-RAY: 88ff4621cc72a8f9-MAA[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 13:59:22 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2024-06-07 13:59:22 DEBUG headers:262 - << HTTP/1.1 200 OK
+2024-06-07 13:59:22 DEBUG headers:265 - << Date: Fri, 07 Jun 2024 08:29:22 GMT
+2024-06-07 13:59:22 DEBUG headers:265 - << Content-Type: application/json
+2024-06-07 13:59:22 DEBUG headers:265 - << Transfer-Encoding: chunked
+2024-06-07 13:59:22 DEBUG headers:265 - << Connection: keep-alive
+2024-06-07 13:59:22 DEBUG headers:265 - << Cache-Control: no-cache
+2024-06-07 13:59:22 DEBUG headers:265 - << zp-rid: 0ea592c0-7898-444a-8371-f75031aa9617
+2024-06-07 13:59:22 DEBUG headers:265 - << Vary: Accept-Encoding
+2024-06-07 13:59:22 DEBUG headers:265 - << Content-Encoding: gzip
+2024-06-07 13:59:22 DEBUG headers:265 - << CF-Cache-Status: DYNAMIC
+2024-06-07 13:59:22 DEBUG headers:265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=BBMcSE6YCmG5XnfWPqkdKfix1ChMPTLMZOLYqjp%2F0W4Z54h45ecD75up7G1awTwiDUZ%2F9r%2FWEN5iL4CKWU16aNBlEiTgClXIVpw5rfRa%2BLrYa3hjjmEta8Ec6MyZPhS5awkqMN4DBstgx6fq0rFw5Gd6eSfAL3sYTzQTgkAO0O0z7A%3D%3D"}],"group":"cf-nel","max_age":604800}
+2024-06-07 13:59:22 DEBUG headers:265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2024-06-07 13:59:22 DEBUG headers:265 - << Server: cloudflare
+2024-06-07 13:59:22 DEBUG headers:265 - << CF-RAY: 88ff4621cc72a8f9-MAA
+2024-06-07 13:59:22 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2024-06-07 13:59:22 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2024-06-07 13:59:22 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json
+2024-06-07 13:59:22 DEBUG wire:73 -  << "e5[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]<[0x8f]1O[0x3]1[0xc][0x85][0xf7][0xfb][0x15][0x96][0xe7][0x16][0xe5][0xd2]r[0xa0]L[0xdc][0xc0][0x80][0xd4][0xed][0xca][0x2]b[0x88].[0xe6]d)[0xb9][0x9e][0x12][0xb7]*T[0xfd][0xef][0xc8][0x81][0xb2][0xd9][0xdf]{~z[0xbe]4[0x0][0xc8][0x1][0x1d][0xb4]+[0x1d]g[0x9f][0x8][0x1d]`[0x1f]y$[0xac][0xc8]OJ[0xec]}](y[0x8e]j[0xf0]jx[0xa2][0xb3]OK[0xa4][0xbb][0xf1][0x90][0xfe][0xcc]!d*[0x5][0x1d]\[0x1a][0x0][0x0],[0x92][0x89]D/Z[0xbb][0x81][0xe7][0x98]`[0x90]j[0x5][0xc0][0x91][0xe5]K[0x95]a[0xc9]<O[0x9f]L1[0xdc][0xa4]"^j[0x91][0x97][0xdd][\r]}[0xf3][0xa2][0xa0][0xb3][0xf][0xa6][0xfd]O8[0x1c]g[0xc9]5[0xe4]u[0xe8][0xb1][0x1][0xb8][0xd6][0x1a]\[0xfa]Q[0xf8][0xa4][0x9][0x92][0x8f]TY[0xa6][0x89][0x8b]P[0xa6][0xd0][0xd7]>[0xd6][0xd8][0xed][0xda]tk[0xd3][0xed][0xcd][0xa3]3[0xc6][0x19][0xf3][0xf6][0xfb][0x84][0xf8]I?x[0xd7][0xa1][0xc5]U[0x5][0x16]?[0x9a][0xeb][0xf][0x0][0x0][0x0][0xff][0xff][0x3][0x0]e[0xc3][0xdf][0xd1].[0x1][0x0][0x0]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "0[\r][\n]"
+2024-06-07 13:59:22 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 13:59:22 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-06-07 14:12:52 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io:443
+2024-06-07 14:12:52 DEBUG DefaultClientConnectionOperator:177 - Connecting to d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io:443
+2024-06-07 14:12:52 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2024-06-07 14:12:52 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2024-06-07 14:12:52 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2024-06-07 14:12:52 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2024-06-07 14:12:52 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2024-06-07 14:12:52 DEBUG DefaultClientConnection:274 - Sending request: POST / HTTP/1.1
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "POST / HTTP/1.1[\r][\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "Content-Length: 299[\r][\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "Host: d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io[\r][\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "[\r][\n]"
+2024-06-07 14:12:52 DEBUG headers:278 - >> POST / HTTP/1.1
+2024-06-07 14:12:52 DEBUG headers:281 - >> Accept: */*
+2024-06-07 14:12:52 DEBUG headers:281 - >> Content-Type: application/json
+2024-06-07 14:12:52 DEBUG headers:281 - >> Content-Length: 299
+2024-06-07 14:12:52 DEBUG headers:281 - >> Host: d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io
+2024-06-07 14:12:52 DEBUG headers:281 - >> Connection: Keep-Alive
+2024-06-07 14:12:52 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2024-06-07 14:12:52 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "{[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  "id": 2,[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  "name": "Bob",[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  "age": 30,[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  "email": "bob@example.com",[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  "address": {[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "    "street": "456 Oak St",[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "    "city": "Springfield",[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "    "state": "IL",[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "    "zip": "62702",[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "    "country": "USA"[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  },[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  "isActive": false,[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  "registeredAt": "2024-06-05T10:00:00Z",[\n]"
+2024-06-07 14:12:52 DEBUG wire:73 -  >> "  "tags": ["tag2", "tag3"][\n]"
+2024-06-07 14:12:52 DEBUG wire:87 -  >> "}"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Date: Fri, 07 Jun 2024 08:42:53 GMT[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "zp-rid: 6efa5fb5-fb87-4c39-9c05-3c3b9d73970d[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=NSaOlQGS%2BxsavcbO4Knn751co%2BDkLNHuEZDDc2Sl1c%2FNdRBb10sFWlCyKn31LF6xYS1S1B8nVZjOQrNxUWxc0X%2BfewuCrwTxY21zCo0yTbK%2BfBUgT8c1UJz7vytg3qg%2F8WIWtpTA0DoSkngqc6tdScVEXPU%2FVtBCqQRTA943h3ByTA%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "CF-RAY: 88ff59ecfc9da907-MAA[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 14:12:53 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2024-06-07 14:12:53 DEBUG headers:262 - << HTTP/1.1 200 OK
+2024-06-07 14:12:53 DEBUG headers:265 - << Date: Fri, 07 Jun 2024 08:42:53 GMT
+2024-06-07 14:12:53 DEBUG headers:265 - << Content-Type: application/json
+2024-06-07 14:12:53 DEBUG headers:265 - << Transfer-Encoding: chunked
+2024-06-07 14:12:53 DEBUG headers:265 - << Connection: keep-alive
+2024-06-07 14:12:53 DEBUG headers:265 - << Cache-Control: no-cache
+2024-06-07 14:12:53 DEBUG headers:265 - << zp-rid: 6efa5fb5-fb87-4c39-9c05-3c3b9d73970d
+2024-06-07 14:12:53 DEBUG headers:265 - << Vary: Accept-Encoding
+2024-06-07 14:12:53 DEBUG headers:265 - << Content-Encoding: gzip
+2024-06-07 14:12:53 DEBUG headers:265 - << CF-Cache-Status: DYNAMIC
+2024-06-07 14:12:53 DEBUG headers:265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=NSaOlQGS%2BxsavcbO4Knn751co%2BDkLNHuEZDDc2Sl1c%2FNdRBb10sFWlCyKn31LF6xYS1S1B8nVZjOQrNxUWxc0X%2BfewuCrwTxY21zCo0yTbK%2BfBUgT8c1UJz7vytg3qg%2F8WIWtpTA0DoSkngqc6tdScVEXPU%2FVtBCqQRTA943h3ByTA%3D%3D"}],"group":"cf-nel","max_age":604800}
+2024-06-07 14:12:53 DEBUG headers:265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2024-06-07 14:12:53 DEBUG headers:265 - << Server: cloudflare
+2024-06-07 14:12:53 DEBUG headers:265 - << CF-RAY: 88ff59ecfc9da907-MAA
+2024-06-07 14:12:53 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2024-06-07 14:12:53 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2024-06-07 14:12:53 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json
+2024-06-07 14:12:53 DEBUG wire:73 -  << "e5[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]<[0x8f]1O[0x3]1[0xc][0x85][0xf7][0xfb][0x15][0x96][0xe7][0x16][0xe5][0xd2]r[0xa0]L[0xdc][0xc0][0x80][0xd4][0xed][0xca][0x2]b[0x88].[0xe6]d)[0xb9][0x9e][0x12][0xb7]*T[0xfd][0xef][0xc8][0x81][0xb2][0xd9][0xdf]{~z[0xbe]4[0x0][0xc8][0x1][0x1d][0xb4]+[0x1d]g[0x9f][0x8][0x1d]`[0x1f]y$[0xac][0xc8]OJ[0xec]}](y[0x8e]j[0xf0]jx[0xa2][0xb3]OK[0xa4][0xbb][0xf1][0x90][0xfe][0xcc]!d*[0x5][0x1d]\[0x1a][0x0][0x0],[0x92][0x89]D/Z[0xbb][0x81][0xe7][0x98]`[0x90]j[0x5][0xc0][0x91][0xe5]K[0x95]a[0xc9]<O[0x9f]L1[0xdc][0xa4]"^j[0x91][0x97][0xdd][\r]}[0xf3][0xa2][0xa0][0xb3][0xf][0xa6][0xfd]O8[0x1c]g[0xc9]5[0xe4]u[0xe8][0xb1][0x1][0xb8][0xd6][0x1a]\[0xfa]Q[0xf8][0xa4][0x9][0x92][0x8f]TY[0xa6][0x89][0x8b]P[0xa6][0xd0][0xd7]>[0xd6][0xd8][0xed][0xda]tk[0xd3][0xed][0xcd][0xa3]3[0xc6][0x19][0xf3][0xf6][0xfb][0x84][0xf8]I?x[0xd7][0xa1][0xc5]U[0x5][0x16]?[0x9a][0xeb][0xf][0x0][0x0][0x0][0xff][0xff][0x3][0x0]e[0xc3][0xdf][0xd1].[0x1][0x0][0x0]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "0[\r][\n]"
+2024-06-07 14:12:53 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 14:12:53 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-06-07 14:14:06 DEBUG BasicClientConnectionManager:161 - Get connection for route {s}->https://d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io:443
+2024-06-07 14:14:06 DEBUG DefaultClientConnectionOperator:177 - Connecting to d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io:443
+2024-06-07 14:14:06 DEBUG RequestAddCookies:123 - CookieSpec selected: ignoreCookies
+2024-06-07 14:14:06 DEBUG RequestAuthCache:77 - Auth cache not set in the context
+2024-06-07 14:14:06 DEBUG RequestTargetAuthentication:80 - Target auth state: UNCHALLENGED
+2024-06-07 14:14:06 DEBUG RequestProxyAuthentication:89 - Proxy auth state: UNCHALLENGED
+2024-06-07 14:14:06 DEBUG DefaultHttpClient:677 - Attempt 1 to execute request
+2024-06-07 14:14:06 DEBUG DefaultClientConnection:274 - Sending request: POST / HTTP/1.1
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "POST / HTTP/1.1[\r][\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "Accept: */*[\r][\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "Content-Type: application/json[\r][\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "Content-Length: 299[\r][\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "Host: d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io[\r][\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "Connection: Keep-Alive[\r][\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)[\r][\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "[\r][\n]"
+2024-06-07 14:14:06 DEBUG headers:278 - >> POST / HTTP/1.1
+2024-06-07 14:14:06 DEBUG headers:281 - >> Accept: */*
+2024-06-07 14:14:06 DEBUG headers:281 - >> Content-Type: application/json
+2024-06-07 14:14:06 DEBUG headers:281 - >> Content-Length: 299
+2024-06-07 14:14:06 DEBUG headers:281 - >> Host: d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io
+2024-06-07 14:14:06 DEBUG headers:281 - >> Connection: Keep-Alive
+2024-06-07 14:14:06 DEBUG headers:281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.8)
+2024-06-07 14:14:06 DEBUG headers:281 - >> Accept-Encoding: gzip,deflate
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "{[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  "id": 2,[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  "name": "Bob",[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  "age": 30,[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  "email": "bob@example.com",[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  "address": {[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "    "street": "456 Oak St",[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "    "city": "Springfield",[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "    "state": "IL",[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "    "zip": "62702",[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "    "country": "USA"[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  },[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  "isActive": false,[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  "registeredAt": "2024-06-05T10:00:00Z",[\n]"
+2024-06-07 14:14:06 DEBUG wire:73 -  >> "  "tags": ["tag2", "tag3"][\n]"
+2024-06-07 14:14:06 DEBUG wire:87 -  >> "}"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Date: Fri, 07 Jun 2024 08:44:07 GMT[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Content-Type: application/json[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Connection: keep-alive[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Cache-Control: no-cache[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "zp-rid: 8a575989-1f8c-4f32-842d-2b60a83c2d13[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Vary: Accept-Encoding[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Content-Encoding: gzip[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=I%2BEywP8%2FY6hPa5mKYwoRI7rhPblO0JIQKyQ2Pr9AsX0IClWS194rm9eVZSgKR%2FyAdNRePj2%2FXBvGnBWQmYF2gCX%2FsxxgQge6o6j2O7wQ0xBqxuBh1eqCmOsg0LAFNG%2F5bYs%2FuBHuSq8WGwfRkEwtQz2ghjA4W9g%2B66%2BFfIbtKks7gg%3D%3D"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "Server: cloudflare[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "CF-RAY: 88ff5bbb9836b28e-MAA[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 14:14:07 DEBUG DefaultClientConnection:259 - Receiving response: HTTP/1.1 200 OK
+2024-06-07 14:14:07 DEBUG headers:262 - << HTTP/1.1 200 OK
+2024-06-07 14:14:07 DEBUG headers:265 - << Date: Fri, 07 Jun 2024 08:44:07 GMT
+2024-06-07 14:14:07 DEBUG headers:265 - << Content-Type: application/json
+2024-06-07 14:14:07 DEBUG headers:265 - << Transfer-Encoding: chunked
+2024-06-07 14:14:07 DEBUG headers:265 - << Connection: keep-alive
+2024-06-07 14:14:07 DEBUG headers:265 - << Cache-Control: no-cache
+2024-06-07 14:14:07 DEBUG headers:265 - << zp-rid: 8a575989-1f8c-4f32-842d-2b60a83c2d13
+2024-06-07 14:14:07 DEBUG headers:265 - << Vary: Accept-Encoding
+2024-06-07 14:14:07 DEBUG headers:265 - << Content-Encoding: gzip
+2024-06-07 14:14:07 DEBUG headers:265 - << CF-Cache-Status: DYNAMIC
+2024-06-07 14:14:07 DEBUG headers:265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=I%2BEywP8%2FY6hPa5mKYwoRI7rhPblO0JIQKyQ2Pr9AsX0IClWS194rm9eVZSgKR%2FyAdNRePj2%2FXBvGnBWQmYF2gCX%2FsxxgQge6o6j2O7wQ0xBqxuBh1eqCmOsg0LAFNG%2F5bYs%2FuBHuSq8WGwfRkEwtQz2ghjA4W9g%2B66%2BFfIbtKks7gg%3D%3D"}],"group":"cf-nel","max_age":604800}
+2024-06-07 14:14:07 DEBUG headers:265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+2024-06-07 14:14:07 DEBUG headers:265 - << Server: cloudflare
+2024-06-07 14:14:07 DEBUG headers:265 - << CF-RAY: 88ff5bbb9836b28e-MAA
+2024-06-07 14:14:07 DEBUG headers:265 - << alt-svc: h3=":443"; ma=86400
+2024-06-07 14:14:07 DEBUG DefaultHttpClient:504 - Connection can be kept alive indefinitely
+2024-06-07 14:14:07 DEBUG RestAssuredHttpBuilder:553 - Parsing response as: application/json
+2024-06-07 14:14:07 DEBUG wire:73 -  << "db[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:87 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3]<[0x8f]1O[0x3]1[0xc][0x85][0xf7][0xfb][0x15][0x96][0xe7][0x16][0xe5][0xd2]r[0xa0]L[0xdc][0xc0][0x80][0xd4][0xed][0xca][0x2]b[0x88].[0xe6]d)[0xb9][0x9e][0x12][0xb7]*T[0xfd][0xef][0xc8][0x81][0xb2][0xd9][0xdf]{~z[0xbe]4[0x0][0xc8][0x1][0x1d][0xb4]+[0x1d]g[0x9f][0x8][0x1d]`[0x1f]y$[0xac][0xc8]OJ[0xec]}](y[0x8e]j[0xf0]jx[0xa2][0xb3]OK[0xa4][0xbb][0xf1][0x90][0xfe][0xcc]!d*[0x5][0x1d]\[0x1a][0x0][0x0],[0x92][0x89]D/Z[0xbb][0x81][0xe7][0x98]`[0x90]j[0x5][0xc0][0x91][0xe5]K[0x95]a[0xc9]<O[0x9f]L1[0xdc][0xa4]"^j[0x91][0x97][0xdd][\r]}[0xf3][0xa2][0xa0][0xb3][0xf][0xa6][0xfd]O8[0x1c]g[0xc9]5[0xe4]u[0xe8][0xb1][0x1][0xb8][0xd6][0x1a]\[0xfa]Q[0xf8][0xa4][0x9][0x92][0x8f]TY[0xa6][0x89][0x8b]P[0xa6][0xd0][0xd7]>[0xd6][0xd8][0xed][0xda]tk[0xd3][0xed][0xcd][0xa3]3[0xc6][0x19][0xf3][0xf6][0xfb][0x84][0xf8]I?x[0xd7][0xa1][0xc5]U[0x5][0x16]?[0x9a][0xeb][0xf][0x0][0x0][0x0][0xff][0xff]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "a[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:87 -  << "[0x3][0x0]e[0xc3][0xdf][0xd1].[0x1][0x0][0x0]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "0[\r][\n]"
+2024-06-07 14:14:07 DEBUG wire:73 -  << "[\r][\n]"
+2024-06-07 14:14:07 DEBUG RestAssuredHttpBuilder:556 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-06-07 14:14:07 DEBUG BasicClientConnectionManager:200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@7915bca3
+2024-06-07 14:14:07 DEBUG BasicClientConnectionManager:225 - Connection can be kept alive indefinitely

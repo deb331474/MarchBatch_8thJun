@@ -1,0 +1,10 @@
+QA_URI_API:http://localhost:3000/APIBatchStudents
+QA_URI_Selenium:http://localhost:3000/SeleniumBatchStudents
+QA_URI_DevOps:http://localhost:3000/DevopsBatchStudents
+QA_URI_SDET:http://localhost:3000/SDETBatchStudents
+QA_URI_BooksStore:https://demoqa.com/BookStore/v1/Books
+QA_URI_Reqres:https://reqres.in/api/users
+QA_URI_Employee:https://dummy.restapiexample.com/api/v1/employees
+QA_URI_RickMond:https://rickandmortyapi.com/api/character
+QA_URI_DummyJson:https://rickandmortyapi.com/api/character
+QA_URI_MyMockBin:https://d2c576b8a2b84f63af1ce21b7b08ac70.api.mockbin.io

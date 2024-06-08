@@ -1,0 +1,6 @@
+Importnat Points---------------
+
+Priority Queue--------
+
+PriorityQueue internally utilizes a binary heap, a tree-like structure where elements are arranged based on priority. The highest-priority element resides at the root, and child nodes inherit their parent’s priority. This arrangement ensures that the highest-priority element is positioned at the front while the lowest is placed at the back.
+

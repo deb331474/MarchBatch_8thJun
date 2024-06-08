@@ -1,0 +1,10 @@
+1717574658991	Rename type 'TC1_GetAllBooks'
+1717574679831	Rename type 'TC2_CreateParticularPOST'
+1717574699366	Rename type 'TC3_PostUsingUserInput'
+1717669102010	Move 'requestBody.json' to 'RestAssuredBookStore'
+1717690971126	Move 'requestBody.json' to 'resources'
+1717694017724	Rename type 'TC4_ReqResGetParticular'
+1717694030678	Rename type 'TC4_RickAndGetParticular'
+1717741017001	Copy compilation unit
+1717778981693	Copy package
+1717783243707	Delete element
